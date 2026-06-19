@@ -4,3 +4,4 @@ __pycache__/
 .env
 notes/*
 !notes/.gitkeep
+!notes/sample_note.md

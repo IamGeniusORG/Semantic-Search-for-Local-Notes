@@ -47,7 +47,7 @@ A lightweight and powerful AI-powered semantic search tool for your local notes.
 
 ### Usage
 
-1. Create a folder named `notes` in the root directory (if it doesn't exist) and drop your `.txt`, `.md`, or `.pdf` files inside it.
+1. A sample note (`notes/sample_note.md`) is included in the repository for demo purposes so you can test it immediately! You can drop any of your actual `.txt`, `.md`, or `.pdf` files inside this `notes` folder.
 2. Run the search script:
    ```powershell
    python semantic_search.py
