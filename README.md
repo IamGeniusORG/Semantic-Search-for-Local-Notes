@@ -4,13 +4,15 @@
 
 # Semantic Search for Local Notes
 
-A lightweight and powerful AI-powered semantic search tool for your local notes. Unlike traditional keyword-based search, this tool understands the **meaning** of your questions and retrieves the most conceptually relevant paragraphs from your local Markdown (`.md`), Text (`.txt`), and PDF (`.pdf`) documents.
+A lightweight and powerful AI-powered semantic search tool for your local notes. Unlike traditional keyword-based search, this tool understands the **meaning** of your questions, retrieves the most conceptually relevant paragraphs from your local documents, and uses a local Generative AI to write a perfect, concise answer.
 
 ## Features
-- **Semantic Understanding**: Finds answers based on concept and meaning, not just exact keyword matches.
-- **Offline & Local**: Runs entirely locally on your machine using the `all-MiniLM-L6-v2` model from Hugging Face. No API keys or internet connection required after the initial setup.
-- **Multiple Formats**: Automatically extracts and parses text from `.txt`, `.md`, and `.pdf` files.
-- **Clean Formatting**: Strips PDF noise, fixes messy bullet points, and wraps text for a beautiful command-line reading experience.
+- **Generative Answers (RAG)**: Uses a local SmolLM-135M AI model to read your notes and answer your questions intelligently.
+- **Instant Search via FAISS**: Creates a local vector database caching your notes, making subsequent searches completely instantaneous.
+- **Smarter Chunking**: Powered by LangChain to ensure context is never lost between paragraphs.
+- **Offline & Private**: Runs entirely locally on your machine. No API keys or internet connection required.
+- **Multiple Formats**: Automatically extracts and parses text from `.txt`, `.md`, `.pdf`, and `.docx` files.
+- **Clean Formatting**: Preserves your lists and bullet points perfectly in the terminal.
 
 ## Getting Started
 
@@ -47,7 +49,7 @@ A lightweight and powerful AI-powered semantic search tool for your local notes.
 
 ### Usage
 
-1. A sample note (`notes/sample_note.md`) is included in the repository for demo purposes so you can test it immediately! You can drop any of your actual `.txt`, `.md`, or `.pdf` files inside this `notes` folder.
+1. A sample note (`notes/sample_note.md`) is included in the repository for demo purposes so you can test it immediately! You can drop any of your actual `.txt`, `.md`, `.pdf`, or `.docx` files inside this `notes` folder.
 2. Run the search script:
    ```powershell
    python semantic_search.py

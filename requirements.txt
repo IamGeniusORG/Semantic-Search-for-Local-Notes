@@ -1,3 +1,8 @@
 sentence-transformers
 numpy
 PyPDF2
+streamlit
+faiss-cpu
+langchain-text-splitters
+python-docx
+transformers
